@@ -4,8 +4,6 @@ class WelcomeMessageEmbed(Embed):
     def __init__(self):
         super().__init__(
             title="Добро пожаловать!",
-            description="Мы рады видеть вас на сервере",
+            description="Тут должно быть приветственное сообщение, но Кенси не написала его, во всем винить ее.",
             color=0x00ff00
         )
-        self.set_thumbnail(url="https://i.imgur.com/example.png")
-        self.add_field(name="Правила", value="Прочитайте #правила")

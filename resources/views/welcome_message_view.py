@@ -7,20 +7,23 @@ class WelcomeMessageView(View):
 
         self.add_item(Button(
             style=discord.ButtonStyle.primary,
-            label='🎮 Пришел погостить',
-            custom_id='guest_role'
+            label='ㅤㅤ☕ Пришел погоститьㅤㅤ',
+            custom_id='guest_role',
+            row=0,
         ))
 
         self.add_item(Button(
             style=discord.ButtonStyle.primary,
-            label='🎮 Пришел сделать контракты',
-            custom_id='farm_role'
+            label='📝 Пришел сделать контракты',
+            custom_id='farm_role',
+            row=0
         ))
 
         self.add_item(Button(
             style=discord.ButtonStyle.secondary,
-            label='🎮 Пришел поиграть в другие игры',
-            custom_id='player_role'
+            label='ㅤㅤㅤㅤㅤㅤㅤ🎮 Пришел поиграть в другие игрыㅤㅤㅤㅤㅤㅤㅤㅤ',
+            custom_id='player_role',
+            row=1
         ))
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
